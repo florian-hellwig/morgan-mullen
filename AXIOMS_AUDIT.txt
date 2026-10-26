@@ -1,0 +1,207 @@
+Reference output of Audit.lean and AuditDeep.lean (Lean 4.34.1, Mathlib v4.34.1)
+
+======================================================================
+Command: lake env lean Audit.lean
+======================================================================
+'MorganMullen.morgan_mullen' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.garefalakis_kapetanakis,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+MorganMullen.morgan_mullen : ∀ (F : Type u_1) (E : Type u_2) [inst : Field F] [inst_1 : Field E] [Finite E]
+  [inst_3 : Algebra F E], MorganMullen.HasMMProperty F E
+'MorganMullen.hachenberger_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+'MorganMullen.hachenberger_eq_iff' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+@MorganMullen.hachenberger_lower_bound : ∀ {F : Type u_1} {E : Type u_2} [inst : Field F] [inst_1 : Fintype F]
+  [inst_2 : Field E] [inst_3 : Fintype E] [inst_4 : Algebra F E],
+  (Fintype.card F - 1) ^ MorganMullen.Model.nfree (Fintype.card F) (Module.finrank F E) *
+      Fintype.card F ^
+        ((MorganMullen.Model.pa (Fintype.card F) (Module.finrank F E) - 1) *
+          MorganMullen.Model.nfree (Fintype.card F) (Module.finrank F E)) ≤
+    MorganMullen.cnCount F E
+@MorganMullen.hachenberger_eq_iff : ∀ {F : Type u_1} {E : Type u_2} [inst : Field F] [inst_1 : Fintype F]
+  [inst_2 : Field E] [inst_3 : Fintype E] [inst_4 : Algebra F E],
+  MorganMullen.cnCount F E =
+      (Fintype.card F - 1) ^ MorganMullen.Model.nfree (Fintype.card F) (Module.finrank F E) *
+        Fintype.card F ^
+          ((MorganMullen.Model.pa (Fintype.card F) (Module.finrank F E) - 1) *
+            MorganMullen.Model.nfree (Fintype.card F) (Module.finrank F E)) ↔
+    MorganMullen.Model.nfree (Fintype.card F) (Module.finrank F E) ∣ Fintype.card F - 1
+'MorganMullen.pcn_sub_theta_cn_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MorganMullen.pcn_error_le_star' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+'MorganMullen.pcn_theta_cn' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+'MorganMullen.pcn_ratio_tendsto_one' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+@MorganMullen.pcn_theta_cn : ∀ {F : Type u_1} {E : Type u_2} [inst : Field F] [inst_1 : Fintype F] [inst_2 : Field E]
+  [inst_3 : Fintype E] [inst_4 : Algebra F E],
+  |↑(MorganMullen.pcnCount F E) - MorganMullen.thetaFrac (Fintype.card E - 1) * ↑(MorganMullen.cnCount F E)| ≤
+      MorganMullen.thetaFrac (Fintype.card E - 1) * MorganMullen.twoPowOmega (Fintype.card E - 1) * √↑(Fintype.card E) *
+        MorganMullen.lFactor F E ∧
+    MorganMullen.thetaFrac (Fintype.card E - 1) * MorganMullen.twoPowOmega (Fintype.card E - 1) * √↑(Fintype.card E) *
+        MorganMullen.lFactor F E ≤
+      2 ^
+              (↑(Fintype.card E - 1).primeFactors.card +
+                  ↑(MorganMullen.Model.numM (Fintype.card F) (Module.finrank F E)) +
+                MorganMullen.cW ↑(MorganMullen.Wq (Fintype.card F)) *
+                  ↑(MorganMullen.Model.sumS (Fintype.card F) (Module.finrank F E))) /
+            √↑(Fintype.card E) *
+          MorganMullen.thetaFrac (Fintype.card E - 1) *
+        ↑(MorganMullen.cnCount F E)
+MorganMullen.pcn_ratio_tendsto_one : ∀ (ε : ℝ),
+  0 < ε →
+    ∃ X,
+      ∀ (F : Type u_1) (E : Type u_2) [inst : Field F] [Fintype F] [inst_2 : Field E] [inst_3 : Fintype E]
+        [inst_4 : Algebra F E],
+        X ≤ Fintype.card E →
+          |↑(MorganMullen.pcnCount F E) / (MorganMullen.thetaFrac (Fintype.card E - 1) * ↑(MorganMullen.cnCount F E)) -
+                1| <
+            ε
+
+======================================================================
+Command: lake env lean AuditDeep.lean
+======================================================================
+constants reachable from morgan_mullen: 67982
+checkers evaluated by `Lean.ofReduceBool` (25):
+[MorganMullen.Analytic.ckCheck,
+ MorganMullen.Cert.checkAll,
+ MorganMullen.Exact.allOK,
+ MorganMullen.Fin32.blk11,
+ MorganMullen.Fin32.blk13,
+ MorganMullen.Fin32.blk16,
+ MorganMullen.Fin32.blk17,
+ MorganMullen.Fin32.blk19,
+ MorganMullen.Fin32.blk2,
+ MorganMullen.Fin32.blk3,
+ MorganMullen.Fin32.blk4,
+ MorganMullen.Fin32.blk5,
+ MorganMullen.Fin32.blk7,
+ MorganMullen.Fin32.blk8,
+ MorganMullen.Fin32.blk9,
+ MorganMullen.Msmall.chkQ2,
+ MorganMullen.Msmall.chkQ3,
+ MorganMullen.Msmall.chkQ4,
+ MorganMullen.Msmall.chkRs2,
+ MorganMullen.Msmall.chkRs3,
+ MorganMullen.W28.run2,
+ MorganMullen.W28.run3,
+ MorganMullen.W28.runBig,
+ MorganMullen.W28.runExc,
+ MorganMullen.W28.runFixed]
+constants the checkers depend on: 7224, of which 228 belong to this project
+core constants with @[implemented_by]/@[extern] (covered by Lean.trustCompiler): 104
+OK: no project constant used by a checker has @[implemented_by]/@[extern]; the project declares exactly the axioms [MorganMullen.garefalakis_kapetanakis,
+ MorganMullen.rosser_schoenfeld_psi]
+'MorganMullen.morgan_mullen' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.garefalakis_kapetanakis,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+checkers evaluated by the proofs of Corollary 8.8 (6):
+[MorganMullen.Exact.allOK,
+ MorganMullen.W28.run2,
+ MorganMullen.W28.run3,
+ MorganMullen.W28.runBig,
+ MorganMullen.W28.runExc,
+ MorganMullen.W28.runFixed]
+OK: all of them are among the 25 checkers of the main theorem
+'MorganMullen.hachenberger_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+'MorganMullen.hachenberger_eq_iff' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+checkers evaluated by the proof of pcn_sub_theta_cn_abs_le (Corollary 8.9 (a), first inequality): 0
+checkers evaluated by the proof of MorganMullen.pcn_error_le_star (6):
+[MorganMullen.Exact.allOK,
+ MorganMullen.W28.run2,
+ MorganMullen.W28.run3,
+ MorganMullen.W28.runBig,
+ MorganMullen.W28.runExc,
+ MorganMullen.W28.runFixed]
+checkers evaluated by the proof of MorganMullen.pcn_ratio_tendsto_one (11):
+[MorganMullen.Exact.allOK,
+ MorganMullen.Msmall.chkQ2,
+ MorganMullen.Msmall.chkQ3,
+ MorganMullen.Msmall.chkQ4,
+ MorganMullen.Msmall.chkRs2,
+ MorganMullen.Msmall.chkRs3,
+ MorganMullen.W28.run2,
+ MorganMullen.W28.run3,
+ MorganMullen.W28.runBig,
+ MorganMullen.W28.runExc,
+ MorganMullen.W28.runFixed]
+OK: the checkers of Corollary 8.9 are among the 25 checkers of the main theorem
+'MorganMullen.pcn_sub_theta_cn_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MorganMullen.pcn_error_le_star' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+'MorganMullen.pcn_ratio_tendsto_one' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ MorganMullen.rosser_schoenfeld_psi,
+ Quot.sound]
+
+======================================================================
+Build
+======================================================================
+lake build: Build completed successfully (3672 jobs), 0 errors, 0 warnings.
+lake build --wfail: Build completed successfully.
+grep -rnw sorry MorganMullen/ MorganMullen.lean: no matches.
+
+Corollary 8.8 (Hachenberger's lower bound, MorganMullen/Sec8Corollary.lean) needs no cited result except the
+Rosser–Schoenfeld bound, which enters through Theorem 7.8 (weight_le_Wq); its proofs evaluate 6 of the 25 checkers
+(those of Theorem 7.8), as AuditDeep.lean checks.
+
+Corollary 8.9 (primitive completely normal elements, MorganMullen/Sec8PCN.lean): the first inequality of (a)
+(pcn_sub_theta_cn_abs_le) depends only on the three axioms of Mathlib and evaluates no checker; the second inequality
+(pcn_error_le_star) and (b) (pcn_ratio_tendsto_one) need no cited result except the Rosser–Schoenfeld bound (through
+Theorem 7.8) and evaluate 6 resp. 11 of the 25 checkers (those of Theorem 7.8, and for (b) also the 5 of Proposition 6.5),
+as AuditDeep.lean checks.
+
+What the axioms mean:
+  propext, Classical.choice, Quot.sound      the three axioms on which all of Mathlib rests
+  Lean.ofReduceBool, Lean.trustCompiler      the verified computations: 25 Boolean checkers (listed above) are
+                                             evaluated outside the kernel (translated by Lean's compiler, run by
+                                             Lean's interpreter, which calls natively compiled library code);
+                                             that `checker = true` implies the mathematical statement is proved
+                                             in the kernel
+  MorganMullen.garefalakis_kapetanakis       cited result: the Morgan–Mullen property for n <= q (JPAA 223 (2019), Theorem 1.3)
+  MorganMullen.rosser_schoenfeld_psi         cited result: psi(x) = log lcm(1,...,floor x) < 1.03883 x (Illinois J. Math. 6 (1962), Theorem 12)

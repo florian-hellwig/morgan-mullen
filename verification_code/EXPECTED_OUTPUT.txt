@@ -1,0 +1,269 @@
+
+=================== 1/8  Sections 2-3, Thm 4.2(a), Cor 8.8, 8.9(a) against the definition of CN (Lemma 2.3, Thm 2.5, 2.6, 3.2)
+(q,n)=(2,2): |E|=4, CN=2, 2 conditions (1 essential), 1 components (largest has 1 conditions): PCN=2: T1-T7 OK  [2.8s]
+(q,n)=(2,4): |E|=16, CN=8, 3 conditions (1 essential), 1 components (largest has 1 conditions): PCN=4: T1-T7 OK  [0.8s]
+(q,n)=(2,6): |E|=64, CN=12, 7 conditions (4 essential), 2 components (largest has 3 conditions): PCN=6: T1-T7 OK  [0.9s]
+(q,n)=(2,8): |E|=256, CN=128, 4 conditions (1 essential), 1 components (largest has 1 conditions): PCN=56: T1-T7 OK  [0.8s]
+(q,n)=(2,12): |E|=4096, CN=768, 11 conditions (4 essential), 2 components (largest has 3 conditions): PCN=360: T1-T7 OK  [3.1s]
+(q,n)=(2,16): |E|=65536, CN=32768, 5 conditions (1 essential), 1 components (largest has 1 conditions): PCN=16272: T1-T7 OK  [52.8s]
+(q,n)=(3,2): |E|=9, CN=4, 3 conditions (2 essential), 2 components (largest has 1 conditions): PCN=4: T1-T7 OK  [3.3s]
+(q,n)=(3,3): |E|=27, CN=18, 2 conditions (1 essential), 1 components (largest has 1 conditions): PCN=9: T1-T7 OK  [1.0s]
+(q,n)=(3,4): |E|=81, CN=32, 6 conditions (3 essential), 3 components (largest has 1 conditions): PCN=16: T1-T7 OK  [1.0s]
+(q,n)=(3,6): |E|=729, CN=324, 6 conditions (2 essential), 2 components (largest has 1 conditions): PCN=144: T1-T7 OK  [1.2s]
+(q,n)=(3,8): |E|=6561, CN=1536, 12 conditions (7 essential), 4 components (largest has 4 conditions): PCN=576: T1-T7 OK  [2.4s]
+(q,n)=(3,9): |E|=19683, CN=13122, 3 conditions (1 essential), 1 components (largest has 1 conditions): PCN=6075: T1-T7 OK  [1.7s]
+(q,n)=(4,2): |E|=16, CN=12, 2 conditions (1 essential), 1 components (largest has 1 conditions): PCN=8: T1-T7 OK  [0.0s]
+(q,n)=(4,3): |E|=64, CN=27, 4 conditions (3 essential), 3 components (largest has 1 conditions): PCN=18: T1-T7 OK  [0.0s]
+(q,n)=(4,4): |E|=256, CN=192, 3 conditions (1 essential), 1 components (largest has 1 conditions): PCN=96: T1-T7 OK  [0.0s]
+(q,n)=(4,6): |E|=4096, CN=1728, 8 conditions (3 essential), 3 components (largest has 1 conditions): PCN=792: T1-T7 OK  [0.8s]
+(q,n)=(5,2): |E|=25, CN=16, 3 conditions (2 essential), 2 components (largest has 1 conditions): PCN=8: T1-T7 OK  [2.7s]
+(q,n)=(5,4): |E|=625, CN=256, 7 conditions (4 essential), 4 components (largest has 1 conditions): PCN=64: T1-T7 OK  [1.0s]
+(q,n)=(5,5): |E|=3125, CN=2500, 2 conditions (1 essential), 1 components (largest has 1 conditions): PCN=1130: T1-T7 OK  [1.4s]
+(q,n)=(5,6): |E|=15625, CN=8448, 10 conditions (6 essential), 3 components (largest has 4 conditions): PCN=2376: T1-T7 OK  [4.2s]
+(q,n)=(7,3): |E|=343, CN=216, 4 conditions (3 essential), 3 components (largest has 1 conditions): PCN=72: T1-T7 OK  [3.1s]
+(q,n)=(7,4): |E|=2401, CN=1728, 6 conditions (3 essential), 3 components (largest has 1 conditions): PCN=480: T1-T7 OK  [1.3s]
+(q,n)=(8,2): |E|=64, CN=56, 2 conditions (1 essential), 1 components (largest has 1 conditions): PCN=36: T1-T7 OK  [0.0s]
+(q,n)=(8,4): |E|=4096, CN=3584, 3 conditions (1 essential), 1 components (largest has 1 conditions): PCN=1512: T1-T7 OK  [1.0s]
+(q,n)=(9,2): |E|=81, CN=64, 3 conditions (2 essential), 2 components (largest has 1 conditions): PCN=32: T1-T7 OK  [0.0s]
+(q,n)=(9,3): |E|=729, CN=648, 2 conditions (1 essential), 1 components (largest has 1 conditions): PCN=264: T1-T7 OK  [0.0s]
+(q,n)=(9,4): |E|=6561, CN=4096, 7 conditions (4 essential), 4 components (largest has 1 conditions): PCN=1536: T1-T7 OK  [0.6s]
+(q,n)=(11,4): |E|=14641, CN=12000, 6 conditions (3 essential), 3 components (largest has 1 conditions): PCN=3200: T1-T7 OK  [6.1s]
+(q,n)=(13,3): |E|=2197, CN=1728, 4 conditions (3 essential), 3 components (largest has 1 conditions): PCN=576: T1-T7 OK  [3.1s]
+(q,n)=(13,4): |E|=28561, CN=20736, 7 conditions (4 essential), 4 components (largest has 1 conditions): PCN=4352: T1-T7 OK  [5.1s]
+ALL CHECKS PASSED
+[111 s]
+
+=================== 2/8  exact maximal weights and the structure theorem (Thm 7.2, Prop 7.7)
+(1) step (i) of Thm 7.8: all components for all n0 | N**, (q, o0) = (2,3), (2,6), (3,2), (3,4)
+  q=2 o0=3: N**=42; largest weight of a component without codimension-1 conditions, over all n0 | N**: 3/4 <= W(2) = 3/4
+  q=2 o0=6: N**=378; largest weight of a component without codimension-1 conditions, over all n0 | N**: 3/4 <= W(2) = 3/4
+  q=3 o0=2: N**=16; largest weight of a component without codimension-1 conditions, over all n0 | N**: 4/9 <= W(3) = 4/9
+  q=3 o0=4: N**=320; largest weight of a component without codimension-1 conditions, over all n0 | N**: 4/9 <= W(3) = 4/9
+    exact maximal weights for comparison (not needed for the proof)
+  q=2 o0=2: N**=6, max weight 3/4 = 0.75000 (attained at n0=6)
+  q=2 o0=3: N**=42, max weight 35/64 = 0.54688 (attained at n0=42)
+  q=2 o0=4: N**=60, max weight 7/16 = 0.43750 (attained at n0=20)
+  q=2 o0=5: N**=620, max weight 196615/1048576 = 0.18751 (attained at n0=620)
+  q=2 o0=6: N**=378, max weight 9/32 = 0.28125 (attained at n0=126)
+  q=2 o0=7: N**=5334, max weight 140668567555/2199023255552 = 0.06397 (attained at n0=5334)
+  q=2 o0=8: N**=2040, max weight 15/256 = 0.05859 (attained at n0=136)
+  q=3 o0=2: N**=16, max weight 4/9 = 0.44444 (attained at n0=8)
+  q=3 o0=3: N**=78, max weight 4/27 = 0.14815 (attained at n0=39)
+  q=3 o0=4: N**=320, max weight 4/27 = 0.14815 (attained at n0=20)
+  q=3 o0=5: N**=2420, max weight 57513730/1162261467 = 0.04948 (attained at n0=220)
+  q=3 o0=6: N**=4368, max weight 16/729 = 0.02195 (attained at n0=42)
+  [0s]
+(2) Theorem 7.2 (a),(b),(c) by brute force
+  q=2: n in [2,3000] + 40 random n <= 60000: 30143 components checked, no violation [11s]
+  q=3: n in [2,1500] + 40 random n <= 30000: 13166 components checked, no violation [16s]
+  q=4: n in [2,1200] + 40 random n <= 24000: 15422 components checked, no violation [19s]
+  q=5: n in [2,1000] + 40 random n <= 20000: 10075 components checked, no violation [22s]
+  q=7: n in [2,800] + 40 random n <= 16000: 7662 components checked, no violation [25s]
+  q=8: n in [2,600] + 40 random n <= 12000: 7639 components checked, no violation [26s]
+  q=9: n in [2,600] + 40 random n <= 12000: 8118 components checked, no violation [28s]
+  q=11: n in [2,400] + 40 random n <= 8000: 4278 components checked, no violation [28s]
+  q=13: n in [2,400] + 40 random n <= 8000: 4245 components checked, no violation [29s]
+  q=16: n in [2,300] + 40 random n <= 6000: 3570 components checked, no violation [30s]
+  q=25: n in [2,300] + 40 random n <= 6000: 4880 components checked, no violation [30s]
+  q=27: n in [2,300] + 40 random n <= 6000: 3268 components checked, no violation [31s]
+PASSED: step (i) of Thm 7.8 and the comparison values; Thm 7.2 (a),(b),(c) hold on all tested components
+[32 s]
+
+=================== 3/8  weight bounds W(q) (Thm 7.8)
+(i)   W_cl > W(q) exactly for {(2, 3): '25/32 = 0.7812', (2, 6): '227921/262144 = 0.8694', (3, 2): '28/27 = 1.0370', (3, 4): '25929152/43046721 = 0.6023'} ; N** = 42, 378, 16, 320
+      for all other q = 2, o0 <= 8 and q = 3, o0 <= 6: W_cl(q, o0) <= W(q); W_cl(2,2) = 3/4  W_cl(2,4) = 7/16  W_cl(3,3) = 4/27
+(ii)  q=2: W_cl(2,o0) <= 3/4 for 2 <= o0 <= 4095 (o0 != 3, 6), largest bound 0.75000; for o0 >= 9 at most 0.03107 (o0 = 12) <= 0.032; o0 >= 4096: <= 3/128 by Lemma 7.5
+(iii) q=3: W_cl(3,o0) <= 4/9 for 3 <= o0 <= 374 (o0 != 4), largest bound 0.14815; for o0 >= 7 at most 0.03415 (o0 = 8) <= 0.051; o0 >= 375: (v) with W = 0.051
+(iv)  q=4: W_cr(q,o0) <= 0.29454 for 2 <= o0 < 39 (largest at o0 = 3); (v) from o1 = 39; W(q) = 0.2946
+(iv)  q=5: W_cr(q,o0) <= 0.33920 for 2 <= o0 < 20 (largest at o0 = 2); (v) from o1 = 20; W(q) = 0.3392
+(iv)  q=7: W_cr(q,o0) <= 0.16826 for 2 <= o0 < 12 (largest at o0 = 2); (v) from o1 = 12; W(q) = 0.1683
+(iv)  q=8: W_cr(q,o0) <= 0.04688 for 2 <= o0 < 11 (largest at o0 = 2); (v) from o1 = 11; W(q) = 0.0469
+(iv)  q=9: W_cr(q,o0) <= 0.10059 for 2 <= o0 < 9 (largest at o0 = 2); (v) from o1 = 9; W(q) = 0.1006
+(iv)  q=11: W_cr(q,o0) <= 0.06694 for 2 <= o0 < 8 (largest at o0 = 2); (v) from o1 = 8; W(q) = 0.067
+(iv)  q=13: W_cr(q,o0) <= 0.04776 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0478
+(iv)  q=16: W_cr(q,o0) <= 0.01172 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0118
+(iv)  q=17: W_cr(q,o0) <= 0.02783 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0279
+(iv)  q=19: W_cr(q,o0) <= 0.02225 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0223
+(iv)  q=23: W_cr(q,o0) <= 0.01517 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0152
+(iv)  q=25: W_cr(q,o0) <= 0.01283 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0129
+(iv)  q=27: W_cr(q,o0) <= 0.01100 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.011
+(iv)  q=29: W_cr(q,o0) <= 0.00953 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0096
+(iv)  q=31: W_cr(q,o0) <= 0.00834 for 2 <= o0 < 7 (largest at o0 = 2); (v) from o1 = 7; W(q) = 0.0084
+(vi)  q>=32: uniform bound <= 0.011745 for 2 <= o0 <= 6 (largest at o0 = 2); (v) at q = 32 from 7
+largest bounds: {2: 0.75, 3: 0.14815, 4: 0.29454, 5: 0.3392, 7: 0.16826, 8: 0.04688, 9: 0.10059, 11: 0.06694, 13: 0.04776, 16: 0.01172, 17: 0.02783, 19: 0.02225, 23: 0.01517, 25: 0.01283, 27: 0.011, 29: 0.00953, 31: 0.00834}
+PASSED: every component without codimension-1 conditions has weight at most W(q) as stated in Thm 7.8 (given the exact computation (i) in struct_and_exactmax.py)
+[1 s]
+
+=================== 4/8  local maxima and divisor sums for M (Prop 6.5)
+kappa_3^3 = 1536/35, kappa_4^4 = 127401984/25025 (exact)
+kappa_3 = 3.527289, kappa_4 = 8.446962;  kappa_3*10822^(-1/6) = 0.749992; kappa_3*42000^(-1/6) = 0.598273; kappa_4*340000^(-1/4) = 0.349809
+q=2: exact local maxima R*_a(o), o <= 60 (five largest per a, as (o, value)):
+   a=0: [(1, '1'), (3, '2/3'), (2, '1/2'), (6, '1/2'), (5, '2/5')]
+   a=1: [(2, '3/4'), (1, '1/2'), (6, '1/2'), (4, '3/8'), (3, '1/3')]
+   a=2: [(4, '7/16'), (2, '3/8'), (12, '7/24'), (1, '1/4'), (6, '1/4')]
+   a=3: [(8, '15/64'), (4, '7/32'), (2, '3/16'), (24, '5/32'), (12, '7/48')]
+   a=4: [(16, '31/256'), (8, '15/128'), (4, '7/64'), (2, '3/32'), (48, '31/384')]
+   a=5: [(32, '63/1024'), (16, '31/512'), (8, '15/256'), (4, '7/128'), (2, '3/64')]
+   a=6: [(32, '63/2048'), (16, '31/1024'), (8, '15/512'), (4, '7/256'), (2, '3/128')]
+   R*_a(90): {0: '1/9', 1: '2/15', 2: '1/15', 3: '1/30'}
+   61 <= o <= 340000: sup f_0 = (0.349206, 63); sup_(a>=1) f_a without (o,a) = (90,1): (0.342857, 210); f_1(90) = 13/30; sup_(a>=2) f_a = (0.336111, 180); sup_(a>=3) f_a = (0.3125, 72)   [14s]
+q=3: exact local maxima R*_a(o), o <= 36 (six largest per a):
+   a=0: [(1, '1'), (2, '1'), (4, '3/4'), (8, '5/8'), (16, '7/16'), (5, '2/5')]
+   a=1: [(3, '4/9'), (6, '4/9'), (1, '1/3'), (2, '1/3'), (12, '1/3'), (24, '5/18')]
+   a=2: [(9, '13/81'), (18, '13/81'), (3, '4/27'), (6, '4/27'), (36, '13/108'), (1, '1/9')]
+   a=3: [(27, '40/729'), (9, '13/243'), (18, '13/243'), (3, '4/81'), (6, '4/81'), (36, '13/324')]
+   a=4: [(27, '40/2187'), (9, '13/729'), (18, '13/729'), (3, '4/243'), (6, '4/243'), (36, '13/972')]
+   37 <= o <= 42000: sup f_0 = (0.6, 40); sup_(a>=1) f_a = (0.466667, 60)
+q=4: sup_(a>=1) f_a(o), o <= 12000: (0.75, 2);  sup f_0(o), 2 <= o <= 12000: (0.666667, 3) (exact f_0(3) = 2/3)   [15s]
+PASSED: all constants of Prop 6.5 confirmed
+[15 s]
+
+=================== 5/8  analytic thresholds (Prop 8.3)
+q= 2 all n (n>=3780)        k=13 lambda=0.41    W=0.75000: N= 16674 valid: True; least N for this k: 16674
+q= 3 3|n                    k=11 lambda=0.5983  W=0.44444: N=  1575 valid: True; least N for this k: 1575
+q= 3 3!|n, n>=131200        k=12 lambda=0.62    W=0.44444: N=  2769 valid: True; least N for this k: 2769
+q= 4 all n (n>=12)          k=10 lambda=0.75    W=0.29460: N=  1010 valid: True; least N for this k: 1010
+q= 5 all n                  k=16 lambda=1       W=0.33920: N= 43618 valid: True; least N for this k: 43618
+q= 7 all n                  k= 9 lambda=1       W=0.16830: N=   336 valid: True; least N for this k: 336
+q= 8                W=0.04690 lambda=1: threshold N=171 (k=9)
+q= 9                W=0.10060 lambda=1: threshold N=111 (k=8)
+q=11                W=0.06700 lambda=1: threshold N=65 (k=7)
+q=13                W=0.04780 lambda=1: threshold N=45 (k=7)
+q=16                W=0.01180 lambda=1: threshold N=32 (k=7)
+q=17                W=0.02790 lambda=1: threshold N=29 (k=6)
+q=19                W=0.02230 lambda=1: threshold N=25 (k=6)
+q=23                W=0.01520 lambda=1: threshold N=19 (k=6)
+q=25                W=0.01290 lambda=1: threshold N=18 (k=6)
+q=27                W=0.01100 lambda=1: threshold N=16 (k=6)
+q=29                W=0.00960 lambda=1: threshold N=15 (k=6)
+q=31                W=0.00840 lambda=1: threshold N=14 (k=6)
+q=32 (and all q>=32) W=0.01180 lambda=1: threshold N=14 (k=6)
+PASSED: all thresholds of Prop 8.3 confirmed
+[2 s]
+
+=================== 6/8  finite ranges with exact M and S (Prop 8.4)
+q= 2:  16671 values of n checked; not accepted (margin < 1 bit): n = [3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 18, 20, 21, 24, 27, 30, 36, 40, 42, 54, 60, 63, 126, 378]; smallest margin (11, 1.5) (for n >= 203: (210, 2.56))  [1s]
+q= 3: 131196 values of n checked; not accepted (margin < 1 bit): n = [4, 5, 6, 7, 8, 10, 12, 13, 16, 20, 24, 26, 32, 39, 40, 80, 160]; smallest margin (14, 1.08) (for n >= 203: (328, 19.83))  [46s]
+q= 4:   1005 values of n checked; not accepted (margin < 1 bit): n = [5, 6, 7, 9, 10, 15, 21, 30]; smallest margin (12, 2.0) (for n >= 203: (210, 36.73))  [46s]
+q= 5:  43612 values of n checked; not accepted (margin < 1 bit): n = [6, 8, 12, 16, 18, 24, 32, 48, 104]; smallest margin (7, 2.13) (for n >= 203: (208, 10.65))  [53s]
+q= 7:    328 values of n checked; not accepted (margin < 1 bit): n = [8, 12, 16, 18, 24, 48]; smallest margin (10, 1.03) (for n >= 203: (240, 31.53))  [53s]
+q= 8:    162 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin (9, 1.41) (for n >= 203: None)  [53s]
+q= 9:    101 values of n checked; not accepted (margin < 1 bit): n = [10, 20]; smallest margin (32, 1.49) (for n >= 203: None)  [53s]
+q=11:     53 values of n checked; not accepted (margin < 1 bit): n = [12]; smallest margin (60, 1.23) (for n >= 203: None)  [53s]
+q=13:     31 values of n checked; not accepted (margin < 1 bit): n = [20]; smallest margin (24, 1.35) (for n >= 203: None)  [53s]
+q=16:     15 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin (21, 9.0) (for n >= 203: None)  [53s]
+q=17:     11 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin (18, 1.71) (for n >= 203: None)  [53s]
+q=19:      5 values of n checked; not accepted (margin < 1 bit): n = [24]; smallest margin (20, 1.41) (for n >= 203: None)  [53s]
+q=23:      0 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin None (for n >= 203: None)  [53s]
+q=25:      0 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin None (for n >= 203: None)  [53s]
+q=27:      0 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin None (for n >= 203: None)  [53s]
+q=29:      0 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin None (for n >= 203: None)  [53s]
+q=31:      0 values of n checked; not accepted (margin < 1 bit): n = []; smallest margin None (for n >= 203: None)  [53s]
+OK: the pairs with margin < 1 bit are exactly the 70 certified pairs.
+[54 s]
+
+=================== 7/8  the 70 PCN certificates (Prop 8.5)
+  (2,3) verified
+  (2,4) verified
+  (2,5) verified
+  (2,6) verified
+  (2,7) verified
+  (2,8) verified
+  (2,9) verified
+  (2,10) verified
+  (2,12) verified
+  (2,14) verified
+  (2,15) verified
+  (2,18) verified
+  (2,20) verified
+  (2,21) verified
+  (2,24) verified
+  (2,27) verified
+  (2,30) verified
+  (2,36) verified
+  (2,40) verified
+  (2,42) verified
+  (2,54) verified
+  (2,60) verified
+  (2,63) verified
+  (2,126) verified
+  (2,378) verified
+  (3,4) verified
+  (3,5) verified
+  (3,6) verified
+  (3,7) verified
+  (3,8) verified
+  (3,10) verified
+  (3,12) verified
+  (3,13) verified
+  (3,16) verified
+  (3,20) verified
+  (3,24) verified
+  (3,26) verified
+  (3,32) verified
+  (3,39) verified
+  (3,40) verified
+  (3,80) verified
+  (3,160) verified
+  (4,5) verified
+  (4,6) verified
+  (4,7) verified
+  (4,9) verified
+  (4,10) verified
+  (4,15) verified
+  (4,21) verified
+  (4,30) verified
+  (5,6) verified
+  (5,8) verified
+  (5,12) verified
+  (5,16) verified
+  (5,18) verified
+  (5,24) verified
+  (5,32) verified
+  (5,48) verified
+  (5,104) verified
+  (7,8) verified
+  (7,12) verified
+  (7,16) verified
+  (7,18) verified
+  (7,24) verified
+  (7,48) verified
+  (9,10) verified
+  (9,20) verified
+  (11,12) verified
+  (13,20) verified
+  (19,24) verified
+70 certificates verified
+[6 s]
+
+=================== 8/8  the examples of Sections 10 and 12 (not part of the proof)
+=== Section 10: (q,n) = (2,4599) = 3^2*7*73
+  e and ord_e(2): [(1, 1), (3, 2), (7, 3), (9, 6), (21, 6), (63, 6), (73, 9), (219, 18), (511, 9), (657, 18), (1533, 18), (4599, 18)]
+  essential types (d,e)^nu: (1,1)^1, (1,3)^1, (1,7)^2, (3,7)^6, (1,9)^1, (1,21)^2, (3,21)^6, (1,63)^6, (1,73)^8, (3,73)^24, (9,73)^72, (1,219)^8, (3,219)^24, (1,511)^48, (3,511)^144, (9,511)^432, (1,657)^24, (1,1533)^48, (3,1533)^144, (1,4599)^144
+  M = 1145 essential conditions on 293 Frobenius orbits; 63 components
+  number | conditions | dim | weight | types in one component
+       1 |          1 |   1 | 1/2          = 0.5000 | (1,1)
+       1 |          1 |   2 | 1/4          = 0.2500 | (1,3)
+       1 |          1 |   6 | 1/64         = 0.0156 | (1,9)
+       2 |          5 |   9 | 33/64        = 0.5156 | (1,7), (3,7)^3, (1,21)
+       2 |          6 |  18 | 3/32         = 0.0938 | (3,21)^3, (1,63)^3
+      48 |         20 |  81 | 6663/262144  = 0.0254 | (1,511), (3,511)^3, (9,511)^9, (1,1533), (3,1533)^3, (1,4599)^3
+       8 |         20 |  81 | 6663/262144  = 0.0254 | (1,73), (3,73)^3, (9,73)^9, (1,219), (3,219)^3, (1,657)^3
+  Theorem 3.2: log2 delta >= -5.893;  log2 L = 1139.65
+  Lemma 5.1: omega(2^4599 - 1) <= 253 (exact t_k), <= 390 (second bound)
+  Theorem 4.2(b) inequality: margin 901.0 bits (with omega <= 253)
+  criterion (*): M = 1145, S = 2.9077 (M_1 = 1; total weight S + M_1/2 = 3.408), W(2) = 3/4: margin 893.7 bits with omega <= 253, 756.7 bits with omega <= 390
+  Corollary 8.9(a): relative error |PCN/(theta CN) - 1| <= 2^-900.96 (first inequality), <= 2^-893.75 (second inequality)
+=== Section 12: (q,n) = (3,10)
+  level 2, target of order 5 (k = 1), codimension 4: fibre element orders [5, 10]
+  level 2, target of order 5 (k = 2), codimension 4: fibre element orders [5, 10]
+=== Section 12: (q,n) = (2,21)
+  component: dim 1, conditions {(1, 1): 1}, weight 1/2 = 0.5000, passed by 1 of 2 vectors
+  component: dim 2, conditions {(1, 3): 1}, weight 1/4 = 0.2500, passed by 3 of 4 vectors
+  component: dim 9, conditions {(1, 21): 1, (1, 7): 1, (3, 7): 3}, weight 33/64 = 0.5156, passed by 294 of 512 vectors
+  component: dim 9, conditions {(1, 7): 1, (1, 21): 1, (3, 7): 3}, weight 33/64 = 0.5156, passed by 294 of 512 vectors
+  CN_2(21) = product of the passing counts = 259308
+examples reproduced [4s]
+[5 s]
+
+ALL CHECKS FINISHED

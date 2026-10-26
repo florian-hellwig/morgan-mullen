@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the formalisation or the Python programs, please cite the paper and this repository."
+title: "Resolvent Components of Completely Normal Elements and the Morgan–Mullen Conjecture: Lean 4 Formalisation and Python Programs"
+license: Apache-2.0
+repository-code: "https://github.com/florian-hellwig/morgan-mullen"
+authors:
+  - family-names: Hellwig
+    given-names: Florian
+keywords:
+  - finite fields
+  - completely normal basis
+  - primitive element
+  - Morgan–Mullen conjecture
+  - Lean 4
+  - Mathlib
+preferred-citation:
+  type: article
+  title: "Resolvent Components of Completely Normal Elements and the Morgan–Mullen Conjecture"
+  authors:
+    - family-names: Hellwig
+      given-names: Florian
+  year: 2026
+  notes: "arXiv link to follow."
