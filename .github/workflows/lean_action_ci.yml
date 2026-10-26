@@ -1,0 +1,71 @@
+name: Lean CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build, no sorry, axioms, deep audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Installs elan + the toolchain from lean-toolchain, downloads the Mathlib cache,
+      # runs `lake build` (fails on errors).
+      - uses: leanprover/lean-action@v1
+
+      - name: No sorry in the sources
+        run: |
+          if grep -rnw sorry MorganMullen/ MorganMullen.lean; then
+            echo "::error::found 'sorry'"; exit 1
+          fi
+
+      - name: No warnings in the build
+        run: lake build --wfail
+
+      - name: Axioms of the main theorem and of Corollaries 8.8 and 8.9
+        run: |
+          lake env lean Audit.lean | tee audit.out
+          python3 - <<'PY'
+          import re, sys
+          s = open("audit.out", encoding="utf-8").read()
+          got = {m.group(1): sorted(a.strip() for a in m.group(2).split(","))
+                 for m in re.finditer(r"'([\w.]+)' depends on axioms: \[(.*?)\]", s, re.S)}
+          std = ["propext", "Classical.choice", "Quot.sound"]
+          comp = std + ["Lean.ofReduceBool", "Lean.trustCompiler", "MorganMullen.rosser_schoenfeld_psi"]
+          expected = {
+              "MorganMullen.morgan_mullen": comp + ["MorganMullen.garefalakis_kapetanakis"],
+              "MorganMullen.hachenberger_lower_bound": comp,
+              "MorganMullen.hachenberger_eq_iff": comp,
+              "MorganMullen.pcn_sub_theta_cn_abs_le": std,
+              "MorganMullen.pcn_error_le_star": comp,
+              "MorganMullen.pcn_theta_cn": comp,
+              "MorganMullen.pcn_ratio_tendsto_one": comp,
+          }
+          bad = False
+          for name, exp in expected.items():
+              if name not in got:
+                  print(f"::error::no axiom list for {name} in the output of Audit.lean"); bad = True
+              elif got[name] != sorted(exp):
+                  print(f"::error::axiom list of {name} changed\n expected {sorted(exp)}\n got      {got[name]}")
+                  bad = True
+              else:
+                  print(f"{name}: {got[name]}")
+          if bad:
+              sys.exit(1)
+          print("axiom lists as expected")
+          PY
+
+      - name: Deep audit (verified checkers, no custom compiled code, declared axioms)
+        run: |
+          lake env lean AuditDeep.lean | tee auditdeep.out
+          grep -q "^OK: no project constant used by a checker" auditdeep.out
+          grep -q "^OK: all of them are among the" auditdeep.out
+          grep -q "^OK: the checkers of Corollary 8.9 are among the" auditdeep.out
+          grep -qF 'checkers evaluated by `Lean.ofReduceBool` (25):' auditdeep.out
+          grep -qF 'checkers evaluated by the proofs of Corollary 8.8 (6):' auditdeep.out
+          grep -qF 'checkers evaluated by the proof of pcn_sub_theta_cn_abs_le (Corollary 8.9 (a), first inequality): 0' auditdeep.out
+          grep -qF 'checkers evaluated by the proof of MorganMullen.pcn_error_le_star (6):' auditdeep.out
+          grep -qF 'checkers evaluated by the proof of MorganMullen.pcn_ratio_tendsto_one (11):' auditdeep.out
