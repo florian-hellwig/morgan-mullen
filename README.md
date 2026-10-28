@@ -4,7 +4,10 @@
 
 This repository contains the Lean 4 formalisation (with Mathlib) and the Python programs accompanying the paper
 
-> F. Hellwig, *Resolvent Components of Completely Normal Elements and the Morgan–Mullen Conjecture*, arXiv: *link to follow*.
+> F. Hellwig, *Resolvent Components of Completely Normal Elements and the Morgan–Mullen Conjecture*,
+> [arXiv:2610.36534](https://arxiv.org/abs/2610.36534) (2026).
+
+Release v1.0 of this repository is archived at Zenodo: [doi:10.5281/zenodo.23661993](https://doi.org/10.5281/zenodo.23661993).
 
 The main formal statement is the conjecture of I. H. Morgan and G. L. Mullen (*Completely normal primitive basis
 generators of finite fields*, Utilitas Math. 49 (1996), 21–43):
@@ -397,7 +400,9 @@ not reviewed the rest of the formalisation.
 
 ## Citation
 
-If you use the formalisation or the Python programs, please cite the paper (arXiv link to follow) and this repository.
+If you use the formalisation or the Python programs, please cite the paper
+([arXiv:2610.36534](https://arxiv.org/abs/2610.36534)) and this repository (release v1.0:
+[doi:10.5281/zenodo.23661993](https://doi.org/10.5281/zenodo.23661993)).
 GitHub's "Cite this repository" button gives the citation of the paper; the metadata of the repository itself are in
 [`CITATION.cff`](CITATION.cff).
 

@@ -3,6 +3,10 @@ message: "If you use the formalisation or the Python programs, please cite the p
 title: "Resolvent Components of Completely Normal Elements and the Morgan–Mullen Conjecture: Lean 4 Formalisation and Python Programs"
 license: Apache-2.0
 repository-code: "https://github.com/florian-hellwig/morgan-mullen"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23661993"
+    description: "Release v1.0 archived at Zenodo"
 authors:
   - family-names: Hellwig
     given-names: Florian
@@ -20,4 +24,6 @@ preferred-citation:
     - family-names: Hellwig
       given-names: Florian
   year: 2026
-  notes: "arXiv link to follow."
+  journal: "arXiv preprint arXiv:2610.36534"
+  doi: "10.48550/arXiv.2610.36534"
+  url: "https://arxiv.org/abs/2610.36534"
